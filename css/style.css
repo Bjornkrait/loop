@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     height: 100%;
     min-height: 100%;
 }
@@ -22,16 +23,15 @@ main {
 .container {
     max-width: 1110px;
     margin: 0 auto;
+    position: relative;
+
 }
 
-/*------section delivery---------*/
-
-
+/*------------section delivery-----------------*/
 .delivery {
-    background-color: #212121;
+    background: #212121;
     color: #fff;
     text-align: center;
-    /* min-height: 235px; */
 }
 
 .delivery .container {
@@ -39,24 +39,253 @@ main {
     padding-bottom: 59px;
 }
 
-.delivery_title {
+.delivery__title {
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 23px;
 }
 
-.delivery_title span {
+.delivery__title span {
     font-weight: normal;
 }
 
+.delivery__text {
+    font-size: 21px;
+}
 
-/*------section man-woman---------*/
+/*----------section man-woman-------------------*/
+
+.man-woman {
+    background: linear-gradient(90deg, #f9f6f1 0%, #f9f6f1 50%, #f9e0e0 50%, #f9e0e0 100%);
+}
 
 .man-woman .container {
     display: flex;
     flex-direction: row;
 }
 
-.man, .woman {
+.man,
+.woman {
     width: 50%;
+    padding-top: 60px;
+    padding-bottom: 58px;
 }
+
+.man {
+    background: url(../img/man.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.woman {
+    background: url(../img/woman.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding-left: 35px;
+}
+
+.man-woman h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.man-woman h2 span {
+    font-weight: normal;
+}
+
+.man-woman p {
+    font-weight: 200;
+}
+
+.man-woman a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D7B399;
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+}
+
+.man-woman a:hover {
+    background: #947762;
+}
+
+/*----------section new-------------------*/
+
+.new .container {
+    padding-top: 193px;
+    padding-bottom: 107px;
+    text-align: center;
+}
+
+.new h2 {
+    font-size: 36;
+    text-transform: uppercase;
+}
+
+.new button {
+    width: 220px;
+    height: 55px;
+    background-color: #D7B399;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.new button:hover,
+.new button:focus {
+    background-color: #947762;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card img {
+    width: 85%;
+}
+
+.card {
+    border: #d7b399 1px solid;
+    width: 22%;
+    min-height: 350px;
+    padding: 22px 0 25px;
+}
+
+.card h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 35px;
+
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d7b399;
+    margin-top: 15px;
+}
+
+/*----------section header-------------------*/
+
+header {
+    background-color: #f9f6f1;
+}
+
+.section-header-menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.section_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.section_wrapper div ul {
+    display: flex;
+    gap: 35px;
+}
+
+
+
+.mainmenu {
+
+    padding-top: 61px;
+}
+
+
+.logo {
+    padding-top: 50px;
+    padding-right: 91px;
+    padding-left: 91px;
+}
+
+.basket {
+    padding-top: 51px;
+    padding-left: 91px;
+}
+
+/*----------section banner shoes-------------------*/
+
+.slider_item {
+    display: flex;
+    min-height: 564px;
+    background: url(/img/shoes.png) no-repeat right center;
+    justify-content: space-between;
+    padding-top: 172px;
+}
+
+.slider_text {
+    font-size: 30px;
+}
+
+.slider_big_text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.button {
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+.slider_item-price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.slider_price_old {
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+
+.slider_price_new {
+    font-size: 42px;
+    color: #d84033
+}
+
+.slider_img {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+/*----------dress-------------------*/
+
+
+
+.shirts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shirt {
+    width: 277px;
+    min-height: 236px;
+    text-align: right;
+    
+}
+
