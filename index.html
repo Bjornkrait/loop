@@ -15,24 +15,27 @@
 <body>
     <header>
         <section class="section-header-menu">
-            <div class="section_wrapper">
+            <div class="section_wrapper container menu_wrapper">
+                <button class="navbar-toggler" id="navbar-toggler" type="button">
+                    <img src="img/burger.svg" width="30px">
+                </button>
                 <div class="mainmenu">
                     <ul class="mainmenu_list">
-                        <li class="mainmenu_item">Для мужчин<img src="img/arrowdown.png" alt=""></li>
-                        <li class="mainmenu_item">Для женщин<img src="img/arrowdown.png" alt=""></li>
-                        <li class="mainmenu_item">Для детей<img src="img/arrowdown.png" alt=""></li>
+                        <li class="mainmenu_item"><a href="">Для мужчин</a><img src="img/arrowdown.png" alt=""></li>
+                        <li class="mainmenu_item"><a href="">Для женщин</a><img src="img/arrowdown.png" alt=""></li>
+                        <li class="mainmenu_item"><a href="">Для детей</a><img src="img/arrowdown.png" alt=""></li>
                     </ul>
                 </div>
                 <div class="logo">
                     <a class="logo_header">
                         <img src="img/logo.png" alt="Логотип">
                     </a>
-                    
+
                 </div>
                 <div class="mainmenu">
                     <ul class="mainmenu_list">
-                        <li class="mainmenu_item">Оплата<img src="img/arrowdown.png" alt=""></li>
-                        <li class="mainmenu_item">Доставка<img src="img/arrowdown.png" alt=""></li>
+                        <li class="mainmenu_item"><a href="">Оплата</a></li>
+                        <li class="mainmenu_item"><a href="">Доставка</a></li>
                     </ul>
                 </div>
                 <div class="basket">
@@ -46,23 +49,34 @@
         </section>
         <section class="section banner">
             <div class="container">
-                <div class="slider_item">
-                    <div class="slider_item-text">
-                        <p class="slider_text">Зимняя распроджа</p>
-                        <p class="slider_big_text">Скидки до 90%</p>
-                        <a href="#" class="button">Смотреть модели</a>
-                    </div>
-                    <div class="slider_item-price">
-                        <p class="slider_price_old">9900&#8381</p>
-                        <p class="slider_price_new">1900&#8381</p>
-                    </div>
-                </div>
-                <div class="slider_img">
-                                    <img src="img/slider.png" alt="">
-                </div>
+                <div class="slider_wrapper">
+                    <div class="slider_list">
+                        <div class="slider_item">
+                            <div class="slider_item-text">
+                                <p class="slider_text">Зимняя распроджа</p>
+                                <p class="slider_big_text">Скидки до 90%</p>
+                                <a href="#" class="button">Смотреть модели</a>
+                            </div>
+                            <div class="slider_item-price">
+                                <p class="slider_price_old">9900&#8381</p>
+                                <p class="slider_price_new">1900&#8381</p>
+                            </div>
+                        </div>
+                        <div class="slider_img">
+                            <img src="img/slider.png" alt="">
+                        </div>
 
-            </div>
+                    </div>
+                    <button type="button" class="slider_button slider_button--prev"><img src="img/ArrowLeft.png" alt="">
+                    </button>
+                    <button type="button" class="slider_button slider_button--next"><img src="img/ArrowRight.png"
+                            alt="">
+                    </button>
+
+                </div>
         </section>
+        </div>
+
     </header>
     <main>
         <section class="section delivery">
@@ -100,14 +114,30 @@
         <section class="section dresses">
             <div class="container">
                 <div class="shirts">
-                    <div class="shirt"><img src="img/shirt.png" alt=""></div>
-                    <div class="shirt"><img src="img/shirt.png" alt=""></div>
-                    <div class="shirt"><img src="img/shirt.png" alt=""></div>
-                    <div class="shirt"><img src="img/shirt.png" alt=""></div>
-                    <div class="shirt"><img src="img/shirt.png" alt=""></div>
-                    <div class="shirt"><img src="img/shirt.png" alt=""></div>
-                    <div class="shirt"><img src="img/shirt.png" alt=""></div>
-                    <div class="shirt"><img src="img/shirt.png" alt=""></div>
+                    <div class="shirt gray"><img src="img/shirt.png" alt="">
+                        <p>ПЛАТЬЯ</p>
+                    </div>
+                    <div class="shirt"><img src="img/shirt.png" alt="">
+                        <p>ПЛАТЬЯ</p>
+                    </div>
+                    <div class="shirt gray"><img src="img/shirt.png" alt="">
+                        <p>ПЛАТЬЯ</p>
+                    </div>
+                    <div class="shirt"><img src="img/shirt.png" alt="">
+                        <p>ПЛАТЬЯ</p>
+                    </div>
+                    <div class="shirt "><img src="img/shirt.png" alt="">
+                        <p>ПЛАТЬЯ</p>
+                    </div>
+                    <div class="shirt gray"><img src="img/shirt.png" alt="">
+                        <p>ПЛАТЬЯ</p>
+                    </div>
+                    <div class="shirt"><img src="img/shirt.png" alt="">
+                        <p>ПЛАТЬЯ</p>
+                    </div>
+                    <div class="shirt gray"><img src="img/shirt.png" alt="">
+                        <p>ПЛАТЬЯ</p>
+                    </div>
                 </div>
 
             </div>
@@ -171,6 +201,15 @@
             </div>
         </section>
     </footer>
+    <script type="text/javascript">
+        const btn = document.getElementById("navbar-toggler");
+        const menus = document.querySelectorAll(".mainmenu");
+        btn.addEventListener('click', () => {
+            for (let el of menus) {
+                el.classList.toggle("show");
+            }
+        })
+    </script>
 </body>
 
 </html>
